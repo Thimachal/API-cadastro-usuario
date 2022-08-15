@@ -1,6 +1,8 @@
 # API-cadastro-usuario
 
-Nesta API é possivel:
+Esse projeto tem o intuito de uma API realizar cadastros de usuário, seguindo as resgras restfull:
+#
+Com os enpoints é possivel:
 
 ✓ Cadastrar usuários;
 <br>
@@ -15,6 +17,7 @@ Nesta API é possivel:
 ✓ Excluir.
 <br>
 <br>
+
 Principais ferramentas usadas:
 
 ✓ Javascript;
