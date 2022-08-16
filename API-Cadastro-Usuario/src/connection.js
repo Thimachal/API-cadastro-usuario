@@ -5,7 +5,7 @@ const knex = require('knex')({
       port : 5432,
       user : 'postgres',
       password : '1234',
-      database : 'cadastro_usuarios'
+      database : 'cadastro_usuarios' //api-cad-users
     }
   });
   module.exports = knex;
