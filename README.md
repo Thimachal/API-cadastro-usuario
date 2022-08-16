@@ -1,8 +1,9 @@
 # API-cadastro-usuario
 
-Esse projeto tem o intuito de uma API realizar cadastros de usuário, seguindo as resgras restfull:
+Esse projeto tem o intuito de construir uma API capaz de realizar cadastros de usuário, seguindo as resgras restfull.
 #
-Com os enpoints é possivel:
+
+## Com os enpoints é possivel:
 
 ✓ Cadastrar usuários;
 <br>
@@ -15,10 +16,15 @@ Com os enpoints é possivel:
 ✓ Atualizar dados de um usuário pelo ID na rota;
 <br>
 ✓ Excluir.
-<br>
-<br>
 
-Principais ferramentas usadas:
+#
+
+### Rotas
+![image](https://user-images.githubusercontent.com/63027260/184757258-2c8cfc22-8f75-40a9-a0ee-b83656a3beb4.png)
+
+#
+
+### Principais ferramentas usadas:
 
 ✓ Javascript;
 <br>
