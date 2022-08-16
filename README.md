@@ -41,4 +41,4 @@ Esse projeto tem o intuito de construir uma API capaz de realizar cadastros de u
 <br>
 ✓ PostgreSQL;
 <br>
-✓ Insominia.
+✓ Insomnia.
