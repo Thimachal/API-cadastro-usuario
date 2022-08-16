@@ -40,3 +40,5 @@ Esse projeto tem o intuito de construir uma API capaz de realizar cadastros de u
 ✓ Node Js;
 <br>
 ✓ PostgreSQL;
+<br>
+✓ Insominia.
