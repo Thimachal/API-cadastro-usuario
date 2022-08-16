@@ -15,7 +15,7 @@ Esse projeto tem o intuito de construir uma API capaz de realizar cadastros de u
 <br>
 ✓ Atualizar dados de um usuário pelo ID na rota;
 <br>
-✓ Excluir.
+✓ Excluir usuários.
 
 ## Demonstração do Projeto
 
