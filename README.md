@@ -33,7 +33,7 @@ Esse projeto tem o intuito de construir uma API capaz de realizar cadastros de u
 
 
 
-## Principais ferramentas usadas:
+## Principais tecnologias usadas:
 
 ✓ Javascript;
 <br>
