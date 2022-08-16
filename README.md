@@ -23,6 +23,8 @@ Esse projeto tem o intuito de construir uma API capaz de realizar cadastros de u
 ### Rotas
 ![image](https://user-images.githubusercontent.com/63027260/184757258-2c8cfc22-8f75-40a9-a0ee-b83656a3beb4.png)
 
+### Conexão Com o Banco de Dados
+![image](https://user-images.githubusercontent.com/63027260/184758347-cb5a1cfe-fe09-4cbf-a84a-3d7eb0dd7661.png)
 
 
 ### Principais ferramentas usadas:
