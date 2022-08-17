@@ -2,8 +2,7 @@ const { Pool } = require('pg');
 
 //configuração Heroku
 const pool = new Pool({
-    client: 'pg',
-    connection: {
+    
       host : 'ec2-44-206-197-71.compute-1.amazonaws.com',
       database : 'dcoop5pcgtj8e8', //api-cad-users
       user : 'zrfassfptqnnaa',      
@@ -12,8 +11,6 @@ const pool = new Pool({
       ssl: {
         rejectUnauthorized: false
       }
-      
-    }
   });
 
   const query = (text, params) => {

@@ -57,7 +57,7 @@ const cadastrar = async (req, res) =>{
 const atualizar = async (req, res) =>{
     const{nome, email, senha} = req.body;
     const {id} = req.params;
-    //com o query não precisar fazer as valiações acima, pois ele faz isso
+    //com o knex não precisar fazer as valiações acima, pois ele faz isso
     try {
         const usuarioExiste = await query('usuarios').where({id}).first();
 
