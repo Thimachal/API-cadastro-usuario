@@ -1,4 +1,4 @@
-const query = require('../connection');
+const {query} = require('../connection');
 
 const listar = async (req, res) =>{
     try {
