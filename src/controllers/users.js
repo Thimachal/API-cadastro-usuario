@@ -1,8 +1,8 @@
-const knex = require('../connection');
+const query = require('../connection');
 
 const listar = async (req, res) =>{
     try {
-        const users = await knex('usuarios');
+        const users = await query('usuarios');
         return res.status(200).json(users);
     } catch (error) {
         return res.status(500).json({mensagem: `Erro interno: ${error.message}`});
@@ -12,7 +12,7 @@ const listar = async (req, res) =>{
 const obter = async (req, res) =>{
     const {id} = req.params;
     try {
-        const usuario = await knex('usuarios').where({id}).first();
+        const usuario = await query('usuarios').where({id}).first();
         
         if(!usuario){
             return res.status(404).json({mensagem: 'Usuário não encontrado'});
@@ -39,7 +39,7 @@ const cadastrar = async (req, res) =>{
     }
 
     try {
-        const usuario = await knex('usuarios')
+        const usuario = await query('usuarios')
         .insert({nome, email, senha})
         .returning('*');
 
@@ -57,15 +57,15 @@ const cadastrar = async (req, res) =>{
 const atualizar = async (req, res) =>{
     const{nome, email, senha} = req.body;
     const {id} = req.params;
-    //com o knex não precisar fazer as valiações acima, pois ele faz isso
+    //com o query não precisar fazer as valiações acima, pois ele faz isso
     try {
-        const usuarioExiste = await knex('usuarios').where({id}).first();
+        const usuarioExiste = await query('usuarios').where({id}).first();
 
         if (!usuarioExiste){
             return res.status(404).json({mensagem: 'Usuário não encontrado'});
         }
 
-        const usuario = await knex('usuarios')
+        const usuario = await query('usuarios')
         .update({nome, email, senha})
         .where({id});
 
@@ -85,13 +85,13 @@ const excluir = async (req, res) =>{
     const {id} = req.params;
 
     try {
-        const usuarioExiste = await knex('usuarios').where({id}).first();
+        const usuarioExiste = await query('usuarios').where({id}).first();
 
         if (!usuarioExiste){
             return res.status(404).json({mensagem: 'Usuário não encontrado'});
         }
 
-        const usuario = await knex('usuarios')
+        const usuario = await query('usuarios')
         .del()
         .where({id});
 

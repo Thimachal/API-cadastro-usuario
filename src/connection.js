@@ -15,7 +15,13 @@ const pool = new Pool({
       
     }
   });
-  module.exports = knex;
+
+  const query = (text, params) => {
+    return pool.query(text, params);
+  }
+
+
+  module.exports = {query};
 
 
 /*Conexão banco de dados local
