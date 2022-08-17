@@ -2,7 +2,7 @@ const {query} = require('../connection');
 
 const listar = async (req, res) =>{
     try {
-        const users = await query('usuarios');
+        const users = await query('select * from autores');
         return res.status(200).json(users);
     } catch (error) {
         return res.status(500).json({mensagem: `Erro interno: ${error.message}`});
