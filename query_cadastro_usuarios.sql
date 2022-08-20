@@ -9,4 +9,3 @@ create table usuarios(
 
 select * from usuarios;
 select * from usuarios where id = 1;
-select * from usuarios where id = 3;
