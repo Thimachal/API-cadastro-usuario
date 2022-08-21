@@ -47,7 +47,7 @@ const cadastrar = async (req, res) =>{
             return res.status(400).json({mensagem: 'Não foi possiveo atualizar o usuário'});
         }
 
-        return res.status(200).json(usuario[0]);
+        return res.status(201).json(usuario[0]);
 
     } catch (error) {
         return res.status(500).json({mensagem: `Erro interno: ${error.message}`});
