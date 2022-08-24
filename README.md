@@ -25,8 +25,8 @@ Esse projeto tem o intuito de construir uma API capaz de realizar cadastros de u
 ### Rotas
 ![image](https://user-images.githubusercontent.com/63027260/184757258-2c8cfc22-8f75-40a9-a0ee-b83656a3beb4.png)
 
-### Link Principal Heroku
-https://api-cad-users.herokuapp.com/
+### Link Teste Heroku: buscar o usuário 1
+https://api-cad-users.herokuapp.com/users/1
 
 
 ### Endpoints
