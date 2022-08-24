@@ -3,7 +3,7 @@ const knex = require('../connection');
 const listar = async (req, res) =>{
     try {
         const users = await knex('usuarios');
-        return res.status(200).json(users);
+        return res.status(200).json(users.nome, users.email);
     } catch (error) {
         return res.status(500).json({mensagem: `Erro interno: ${error.message}`});
     }    
